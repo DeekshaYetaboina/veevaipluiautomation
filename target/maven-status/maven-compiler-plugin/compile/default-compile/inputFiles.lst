@@ -1,3 +1,8 @@
 C:\Projects\selenium-project\src\main\java\com\automation\AbstractComponents\AbstractComponents.java
-C:\Projects\selenium-project\src\main\java\com\automation\PageObjects\Footers.java
+C:\Projects\selenium-project\src\main\java\com\automation\IPLPageSelectors.java
+C:\Projects\selenium-project\src\main\java\com\automation\PageObjects\FootersUIPage.java
+C:\Projects\selenium-project\src\main\java\com\automation\PageObjects\LogoAndYearsPage.java
+C:\Projects\selenium-project\src\main\java\com\automation\PageObjects\PointsTablePage.java
+C:\Projects\selenium-project\src\main\java\com\automation\PageObjects\SearchResultsPage.java
 C:\Projects\selenium-project\src\main\java\com\automation\resources\ExtentReportsNG.java
+C:\Projects\selenium-project\src\main\java\com\automation\SeleniumUtils\SeleniumUtils.java
