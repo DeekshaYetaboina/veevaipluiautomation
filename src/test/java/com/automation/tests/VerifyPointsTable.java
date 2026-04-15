@@ -1,8 +1,8 @@
 package com.automation.tests;
 
-import com.automation.PageObjects.PointsTablePage;
-import com.automation.TestUtils.TestDataUtils;
-import com.automation.tests.testComponents.BaseTest;
+import com.automation.pageobjects.PointsTablePage;
+import com.automation.testutils.TestDataUtils;
+import com.automation.tests.testcomponents.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

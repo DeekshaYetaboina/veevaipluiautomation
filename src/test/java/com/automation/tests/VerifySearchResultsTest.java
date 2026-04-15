@@ -1,9 +1,9 @@
 package com.automation.tests;
 
-import com.automation.PageObjects.SearchResultsPage;
-import com.automation.TestUtils.TestDataUtils;
+import com.automation.pageobjects.SearchResultsPage;
+import com.automation.testutils.TestDataUtils;
 
-import com.automation.tests.testComponents.BaseTest;
+import com.automation.tests.testcomponents.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

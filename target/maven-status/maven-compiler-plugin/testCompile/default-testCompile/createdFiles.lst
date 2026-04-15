@@ -1,8 +1,0 @@
-com\automation\TestUtils\TestUtils.class
-com\automation\tests\VerifyPointsTable.class
-com\automation\tests\VerifySearchResultsTest.class
-com\automation\tests\testComponents\Listeners.class
-com\automation\tests\CheckFooterLinksUITest.class
-com\automation\tests\testComponents\BaseTest.class
-com\automation\tests\VerifyLogoAndYearsTest.class
-com\automation\TestUtils\TestDataUtils.class

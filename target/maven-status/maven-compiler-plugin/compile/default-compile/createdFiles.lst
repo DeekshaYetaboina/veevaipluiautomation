@@ -1,8 +1,0 @@
-com\automation\AbstractComponents\AbstractComponents.class
-com\automation\PageObjects\SearchResultsPage.class
-com\automation\PageObjects\FootersUIPage.class
-com\automation\IPLPageSelectors.class
-com\automation\resources\ExtentReportsNG.class
-com\automation\PageObjects\LogoAndYearsPage.class
-com\automation\SeleniumUtils\SeleniumUtils.class
-com\automation\PageObjects\PointsTablePage.class
