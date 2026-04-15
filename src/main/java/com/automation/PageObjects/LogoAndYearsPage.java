@@ -6,12 +6,13 @@ import com.automation.IPLPageSelectors;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * LogoAndYearsPage handles operations related to team logos
  * and winning years in the Teams section.
- *
  * This class verifies:
  * - Team logo images
  * - Winning years displayed on hover
@@ -20,19 +21,19 @@ public class LogoAndYearsPage extends AbstractComponents {
     /**
      * Utility class for handling dynamic waits and actions.
      */
-     SeleniumUtils seleniumUtils;
+    SeleniumUtils seleniumUtils;
+
     /**
      * Constructor to initialize WebDriver and utilities.
-     *
      * @param driver WebDriver instance passed from test class
      */
     public LogoAndYearsPage(WebDriver driver) {
         super(driver);
         seleniumUtils = new SeleniumUtils(driver);
     }
+
     /**
      * Navigates to a section using header.
-     *
      * @param header navigation menu text
      */
     @Override
@@ -45,27 +46,26 @@ public class LogoAndYearsPage extends AbstractComponents {
 
     /**
      * Retrieves all team logo image URLs.
-     *
      * @return list of logo URLs
      */
     public List<String> logos() {
         List<String> logoUrls = new ArrayList<>();
         List<WebElement> logos = driver.findElements(teamLogo);
-        for(WebElement logo : logos) {
+        for (WebElement logo : logos) {
             logoUrls.add(logo.getAttribute("src"));
         }
         return logoUrls;
     }
+
     /**
      * Retrieves winning years for each team by hovering over cards.
-     *
      * @return list of winning years
      */
     public List<String> getYears() {
         List<String> years = new ArrayList<>();
         List<WebElement> cards = driver.findElements(teamCards);
 
-        for (WebElement card:cards) {
+        for (WebElement card : cards) {
             seleniumUtils.moveToElement(card);
             WebElement hover = card.findElement(By.cssSelector(IPLPageSelectors.teamWinningYears));
             String year = hover.getText();
@@ -73,6 +73,4 @@ public class LogoAndYearsPage extends AbstractComponents {
         }
         return years;
     }
-
-
-    }
+}

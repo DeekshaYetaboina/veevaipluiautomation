@@ -10,31 +10,27 @@ import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * SearchResultsPage handles search functionality in the News section.
- *
- * This class verifies:
- * - Search execution
- * - Article retrieval
- * - Keyword matching in results
  */
 public class SearchResultsPage extends AbstractComponents {
     /**
      * Utility class for waits and actions.
      */
     SeleniumUtils seleniumUtils;
+
     /**
      * Constructor to initialize WebDriver and utilities.
-     *
      * @param driver WebDriver instance
      */
     public SearchResultsPage(WebDriver driver) {
         super(driver);
         seleniumUtils = new SeleniumUtils(driver);
     }
+
     /**
      * Navigates to a section using header.
-     *
      * @param header navigation menu text
      */
     @Override
@@ -49,7 +45,6 @@ public class SearchResultsPage extends AbstractComponents {
 
     /**
      * Navigates to News section and performs search.
-     *
      * @param searchText text to search
      */
     public void navigateToNewsSection(String searchText) {
@@ -60,9 +55,9 @@ public class SearchResultsPage extends AbstractComponents {
         search.sendKeys(searchText, Keys.ENTER);
 
     }
+
     /**
      * Retrieves all article titles from search results.
-     *
      * @return list of article titles
      */
     public List<String> verifySearchResultsPage() {
@@ -78,7 +73,6 @@ public class SearchResultsPage extends AbstractComponents {
 
     /**
      * Checks if any article contains all expected keywords.
-     *
      * @param keywords list of expected keywords
      * @return true if match found, false otherwise
      */
@@ -97,7 +91,5 @@ public class SearchResultsPage extends AbstractComponents {
             }
         }
         return false;
-
-
     }
 }
