@@ -4,10 +4,10 @@
     <parameter name="browser" value="edge"/>
     <listeners>
         <listener class-name="com.automation.tests.testcomponents.Listeners"/>
-
     </listeners>
     <test verbose="2" preserve-order="true" name="TestAutomation">
         <classes>
+            <class name="com.automation.tests.CheckFooterLinksUITest"/>
             <class name ="com.automation.tests.VerifyLogoAndYearsTest"/>
             <class name ="com.automation.tests.VerifySearchResultsTest"/>
             <class name="com.automation.tests.VerifyPointsTable"/>
