@@ -16,7 +16,7 @@ cross-browser support, and reporting features.
 - Data-driven testing using JSON files
 - Cross-browser support (Chrome & Edge)
 - Dynamic waits using Explicit Waits
-- Extent Reports integration
+- Extent and Allure Reports integration
 - Screenshot capture on test failure
 - Reusable utility classes
 - Clean and modular framework design
@@ -80,7 +80,7 @@ cross-browser support, and reporting features.
 
 ### 1. Clone the repository ###
 
-git clone
+git clone 
 
 ---
 
@@ -111,7 +111,6 @@ git clone
 For Chrome: testng-chrome.xml
 For Edge: testng-edge.xml
 
-
 ---
 
 ## Cross Browser Support ##
@@ -123,9 +122,19 @@ Supported browsers:
 
 ---
 
-## Extent Report ##
+## Reports ##
 
-Generated at: /reports/index.html
+### Extent Report ###
+
+Generated at: target/reports/index.html
+
+---
+
+## Allure Reports
+
+Allure provides interactive and detailed test reports with step-level insights, attachments, and execution trends.
+
+Generate at : target/allure-results
 
 ---
 
@@ -139,7 +148,7 @@ Logs stored at: /target/logs/framework.log
 ## Screenshot Feature ##
 
 - Screenshots are automatically captured when a test fails
-- Saved in the `/reports` folder
+- Saved in the `target/reports` folder
 - Attached to the Extent Report for easier debugging
 
 ---
