@@ -1,17 +1,16 @@
 package com.automation.tests.testcomponents;
 
 import com.automation.testutils.ConfigReader;
+import com.automation.testutils.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 /**
  * BaseTest class provides common setup and teardown methods for all test classes.
- *
  * This class is responsible for:
  * 1. Loading configuration before test execution
  * 2. Initializing WebDriver based on the browser parameter
  * 3. Navigating to the application URL
  * 4. Closing the browser after each test method
- *
  * It acts as a parent class for all test classes to ensure
  * reusable and consistent test execution flow.
  */

@@ -1,4 +1,4 @@
-package com.automation.tests.testcomponents;
+package com.automation.testutils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,6 @@ import org.openqa.selenium.edge.EdgeDriver;
  * 2. Managing WebDriver using ThreadLocal for parallel execution
  * 3. Providing access to WebDriver instance across the framework
  * 4. Properly closing and cleaning up WebDriver instances
- *
  * This class ensures thread-safe WebDriver handling and supports
  * multiple browser execution.
  */
