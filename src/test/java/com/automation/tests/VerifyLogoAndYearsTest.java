@@ -1,30 +1,24 @@
 package com.automation.tests;
 
 import com.automation.pageobjects.LogoAndYearsPage;
-import com.automation.testutils.TestDataUtils;
-import com.automation.tests.testcomponents.BaseTest;
+import com.automation.utils.TestDataUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.List;
+
 /**
  * VerifyLogoAndYearsTest class validates the logos and years
  * displayed on the IPL website.
- *
  * This test uses data-driven testing by fetching expected values
  * from JSON files and comparing them with actual UI data.
  */
 public class VerifyLogoAndYearsTest extends BaseTest {
-    /**
-     * Utility class used to fetch test data from JSON files.
-     */
     TestDataUtils testDataUtils = new TestDataUtils();
-    /**
-     * Page object representing logo and years UI elements.
-     */
     LogoAndYearsPage logoAndYearsPage;
+
     /**
      * Initializes the page object before each test method.
      */
@@ -32,10 +26,10 @@ public class VerifyLogoAndYearsTest extends BaseTest {
     public void initialize() {
         logoAndYearsPage = new LogoAndYearsPage(driver);
     }
+
     /**
      * Verifies that the logos displayed on the page match
      * the expected URLs from the JSON file.
-     *
      * Steps:
      * 1. Fetch expected logo URLs and header from JSON
      * 2. Navigate using header
@@ -48,15 +42,15 @@ public class VerifyLogoAndYearsTest extends BaseTest {
     public void verifyLogos() throws IOException {
         String path = testDataUtils.getPath("ExpectedUrls");
         List<String> expectedUrls = testDataUtils.getJsonData(path, "expectedUrls");
-        String header = testDataUtils.getJsonString(path,"header");
+        String header = testDataUtils.getJsonString(path, "header");
         logoAndYearsPage.execute(header);
         List<String> actualUrls = logoAndYearsPage.logos();
-        Assert.assertEquals(actualUrls,expectedUrls,"Expected Logos are Actual Logos differ");
+        Assert.assertEquals(actualUrls, expectedUrls, "Expected Logos are Actual Logos differ");
     }
+
     /**
      * Verifies that the years displayed on the page match
      * the expected values from the JSON file.
-     *
      * Steps:
      * 1. Fetch expected years and header from JSON
      * 2. Navigate using header
@@ -67,16 +61,11 @@ public class VerifyLogoAndYearsTest extends BaseTest {
      */
     @Test
     public void verifyYears() throws IOException {
-        String path=testDataUtils.getPath("ExpectedYears");
-        String header = testDataUtils.getJsonString(path,"header");
+        String path = testDataUtils.getPath("ExpectedYears");
+        String header = testDataUtils.getJsonString(path, "header");
         logoAndYearsPage.execute(header);
         List<String> actualYears = logoAndYearsPage.getYears();
         List<String> expectedYears = testDataUtils.getJsonData(path, "expectedYears");
-        Assert.assertEquals(actualYears,expectedYears,"Expected Actual Years differ");
+        Assert.assertEquals(actualYears, expectedYears, "Expected Actual Years differ");
     }
 }
-
-
-
-
-

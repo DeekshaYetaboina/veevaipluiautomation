@@ -18,13 +18,11 @@ import java.util.List;
  * - Winning years displayed on hover
  */
 public class LogoAndYearsPage extends AbstractComponents {
-    /**
-     * Utility class for handling dynamic waits and actions.
-     */
     SeleniumUtils seleniumUtils;
 
     /**
      * Constructor to initialize WebDriver and utilities.
+     *
      * @param driver WebDriver instance passed from test class
      */
     public LogoAndYearsPage(WebDriver driver) {
@@ -34,6 +32,7 @@ public class LogoAndYearsPage extends AbstractComponents {
 
     /**
      * Navigates to a section using header.
+     *
      * @param header navigation menu text
      */
     @Override
@@ -46,6 +45,7 @@ public class LogoAndYearsPage extends AbstractComponents {
 
     /**
      * Retrieves all team logo image URLs.
+     *
      * @return list of logo URLs
      */
     public List<String> logos() {
@@ -59,12 +59,12 @@ public class LogoAndYearsPage extends AbstractComponents {
 
     /**
      * Retrieves winning years for each team by hovering over cards.
+     *
      * @return list of winning years
      */
     public List<String> getYears() {
         List<String> years = new ArrayList<>();
         List<WebElement> cards = driver.findElements(teamCards);
-
         for (WebElement card : cards) {
             seleniumUtils.moveToElement(card);
             WebElement hover = card.findElement(By.cssSelector(IPLPageSelectors.teamWinningYears));

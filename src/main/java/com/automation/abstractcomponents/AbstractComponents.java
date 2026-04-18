@@ -9,13 +9,11 @@ import org.openqa.selenium.WebDriver;
  * This class acts as a base component class and is intended to be extended by page classes to avoid code duplication.
  */
 public class AbstractComponents {
-    /**
-     * WebDriver instance used to interact with the browser.
-     */
     protected WebDriver driver;
 
     /**
      * Constructor to initialize WebDriver for child classes.
+     *
      * @param driver the WebDriver instance passed from BaseTest
      */
     public AbstractComponents(WebDriver driver) {
@@ -31,6 +29,5 @@ public class AbstractComponents {
      */
     public void execute(String header) {
         driver.findElement(By.cssSelector((IPLPageSelectors.headers).replace("%s", header))).click();
-
     }
 }

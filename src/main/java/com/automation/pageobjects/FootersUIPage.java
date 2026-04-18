@@ -17,13 +17,11 @@ import java.util.Map;
  * It extends AbstractComponents to reuse common UI actions.
  */
 public class FootersUIPage extends AbstractComponents {
-    /**
-     * Utility class for handling waits and user actions.
-     */
     SeleniumUtils seleniumUtils;
 
     /**
      * Constructor to initialize WebDriver and utilities.
+     *
      * @param driver WebDriver instance passed from test class
      */
     public FootersUIPage(WebDriver driver) {
@@ -35,12 +33,10 @@ public class FootersUIPage extends AbstractComponents {
      * Locator for footer section container.
      */
     By footer = By.cssSelector(IPLPageSelectors.footerSection);
-
     /**
      * Locator for footer menu sections (TEAM, ABOUT, etc.).
      */
     By menuSections = By.cssSelector(IPLPageSelectors.footerMenuSections);
-
     /**
      * Locator for all footer links.
      */
@@ -56,6 +52,7 @@ public class FootersUIPage extends AbstractComponents {
 
     /**
      * Retrieves text values of all footer menu sections.
+     *
      * @return List of footer section texts
      */
     public List<String> getActualValues() {
@@ -72,6 +69,7 @@ public class FootersUIPage extends AbstractComponents {
 
     /**
      * Validates footer links by navigating to each URL and comparing expected vs actual URL after page load.
+     *
      * @return Map containing expected URL as key and actual URL as value
      */
     public Map<String, String> getLinks() {

@@ -10,13 +10,11 @@ import org.openqa.selenium.WebDriver;
  * PointsTablePage handles interactions with the IPL points table.
  */
 public class PointsTablePage extends AbstractComponents {
-    /**
-     * Utility class for waits and actions.
-     */
     SeleniumUtils seleniumUtils;
 
     /**
      * Constructor to initialize WebDriver and utilities.
+     *
      * @param driver WebDriver instance
      */
     public PointsTablePage(WebDriver driver) {
@@ -31,6 +29,7 @@ public class PointsTablePage extends AbstractComponents {
 
     /**
      * Retrieves the name of the top-ranked team.
+     *
      * @return top team name
      */
     public String getTopTeam() {
@@ -39,24 +38,25 @@ public class PointsTablePage extends AbstractComponents {
 
     /**
      * Retrieves matches played by top team.
+     *
      * @return matches played
      */
     public String getActualMatchesPlayed() {
         return driver.findElements(matchesPlayed).getFirst().getText();
-
     }
 
     /**
      * Retrieves points of the top team.
+     *
      * @return points scored
      */
     public String getActualPoints() {
-
         return driver.findElements(points).getFirst().getText();
     }
 
     /**
      * Navigates to points table section and waits for it to load.
+     *
      * @param header navigation menu text
      */
     @Override

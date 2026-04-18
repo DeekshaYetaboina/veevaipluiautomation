@@ -1,9 +1,14 @@
-package com.automation.driver;
+package com.automation.resources.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+
+import java.time.Duration;
+
 /**
  * DriverFactory class provides methods for:
  * 1. Initializing WebDriver instances based on browser type
@@ -14,7 +19,10 @@ import org.openqa.selenium.edge.EdgeDriver;
  * multiple browser execution.
  */
 public class DriverFactory {
-
+    /**
+     * Logger instance for DriverFactory class.
+     */
+    private static final Logger log = LogManager.getLogger(DriverFactory.class);
     /**
      * ThreadLocal WebDriver instance to support parallel test execution.
      */
@@ -25,33 +33,40 @@ public class DriverFactory {
      *
      * @param browser the browser name (e.g., chrome, edge)
      * @return initialized WebDriver instance
-     *
-     * This method:
-     * 1. Sets up the required driver using WebDriverManager
-     * 2. Creates a browser instance
-     * 3. Maximizes the browser window
      */
     public static WebDriver initDriver(String browser) {
-
+        log.info("Initializing WebDriver for browser: {}", browser);
         if (browser.equalsIgnoreCase("chrome")) {
+            log.info("Setting up ChromeDriver");
             WebDriverManager.chromedriver().setup();
             driver.set(new ChromeDriver());
         } else if (browser.equalsIgnoreCase("edge")) {
+            log.info("Setting up EdgeDriver");
             try {
                 WebDriverManager.edgedriver().setup();
                 driver.set(new EdgeDriver());
             } catch (Exception e) {
-                String path = System.getProperty("user.dir") + "/src/main/java/com/automation/resources/seleniumdrivers/msedgedriver.exe";
+                log.warn("WebDriverManager failed, falling back to local EdgeDriver");
+                String path = System.getProperty("user.dir")
+                        + "/src/main/resources/drivers/msedgedriver.exe";
+                log.info("Using local EdgeDriver path: {}", path);
                 System.setProperty("webdriver.edge.driver", path);
                 driver.set(new EdgeDriver());
             }
         } else {
+            log.error("Unsupported browser: {}", browser);
             throw new RuntimeException("Browser not supported: " + browser);
         }
-
         getDriver().manage().window().maximize();
+        log.info("Browser window maximized");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        log.info("Implicit wait set to 10 seconds");
+        getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        log.info("Page load timeout set to 30 seconds");
+        log.info("WebDriver initialized successfully");
         return getDriver();
     }
+
     /**
      * Returns the current thread's WebDriver instance.
      *
@@ -60,14 +75,18 @@ public class DriverFactory {
     public static WebDriver getDriver() {
         return driver.get();
     }
+
     /**
      * Quits the WebDriver instance and removes it from ThreadLocal.
-     * Ensures proper cleanup after test execution.
      */
     public static void quitDriver() {
         if (driver.get() != null) {
+            log.info("Quitting WebDriver");
             driver.get().quit();
             driver.remove();
+            log.info("WebDriver closed successfully");
+        } else {
+            log.warn("Attempted to quit WebDriver, but it was null");
         }
     }
 }

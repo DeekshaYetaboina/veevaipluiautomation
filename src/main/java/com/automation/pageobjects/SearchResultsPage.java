@@ -15,13 +15,11 @@ import java.util.List;
  * SearchResultsPage handles search functionality in the News section.
  */
 public class SearchResultsPage extends AbstractComponents {
-    /**
-     * Utility class for waits and actions.
-     */
     SeleniumUtils seleniumUtils;
 
     /**
      * Constructor to initialize WebDriver and utilities.
+     *
      * @param driver WebDriver instance
      */
     public SearchResultsPage(WebDriver driver) {
@@ -31,6 +29,7 @@ public class SearchResultsPage extends AbstractComponents {
 
     /**
      * Navigates to a section using header.
+     *
      * @param header navigation menu text
      */
     @Override
@@ -45,6 +44,7 @@ public class SearchResultsPage extends AbstractComponents {
 
     /**
      * Navigates to News section and performs search.
+     *
      * @param searchText text to search
      */
     public void navigateToNewsSection(String searchText) {
@@ -53,18 +53,17 @@ public class SearchResultsPage extends AbstractComponents {
         seleniumUtils.waitForElementToAppear(searchTab);
         WebElement search = driver.findElement(searchTab);
         search.sendKeys(searchText, Keys.ENTER);
-
     }
 
     /**
      * Retrieves all article titles from search results.
+     *
      * @return list of article titles
      */
     public List<String> verifySearchResultsPage() {
         List<String> articleTitles = new ArrayList<>();
         seleniumUtils.waitForElementToAppear(newsSection);
         List<WebElement> articles = driver.findElements(allArticles);
-
         for (WebElement article : articles) {
             articleTitles.add(article.getText().toLowerCase());
         }
@@ -73,6 +72,7 @@ public class SearchResultsPage extends AbstractComponents {
 
     /**
      * Checks if any article contains all expected keywords.
+     *
      * @param keywords list of expected keywords
      * @return true if match found, false otherwise
      */

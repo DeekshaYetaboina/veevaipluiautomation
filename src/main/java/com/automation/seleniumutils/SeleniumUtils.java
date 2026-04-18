@@ -21,15 +21,16 @@ public class SeleniumUtils {
 
     /**
      * Constructor to initialize WebDriver.
+     *
      * @param driver WebDriver instance
      */
     public SeleniumUtils(WebDriver driver) {
         this.driver = driver;
-
     }
 
     /**
      * Waits for element to be visible.
+     *
      * @param element WebElement to wait for
      */
     public void waitForElementToAppear(WebElement element) {
@@ -39,6 +40,7 @@ public class SeleniumUtils {
 
     /**
      * Waits for element using locator.
+     *
      * @param locator By locator
      */
     public void waitForElementToAppear(By locator) {
@@ -48,6 +50,7 @@ public class SeleniumUtils {
 
     /**
      * Performs hover action on element.
+     *
      * @param element WebElement to hover
      */
     public void moveToElement(WebElement element) {
@@ -57,6 +60,7 @@ public class SeleniumUtils {
 
     /**
      * Waits until URL matches expected.
+     *
      * @param expectedUrl expected URL
      */
     public void waitForUrlToLoad(String expectedUrl) {
@@ -66,6 +70,7 @@ public class SeleniumUtils {
 
     /**
      * Scrolls to a specific element.
+     *
      * @param locator By locator
      */
     public void scrollToElement(By locator) {

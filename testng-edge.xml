@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <parameter name="browser" value="edge"/>
     <listeners>
-        <listener class-name="com.automation.tests.testcomponents.Listeners"/>
+        <listener class-name="com.automation.listeners.Listeners"/>
     </listeners>
     <test verbose="2" preserve-order="true" name="TestAutomation">
         <classes>

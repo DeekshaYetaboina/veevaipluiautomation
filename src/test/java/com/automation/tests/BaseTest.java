@@ -1,55 +1,54 @@
-package com.automation.tests.testcomponents;
+package com.automation.tests;
 
 import com.automation.resources.driver.DriverFactory;
-import com.automation.testutils.ConfigReader;
+import com.automation.utils.ConfigReader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
+
 /**
  * BaseTest class provides common setup and teardown methods for all test classes.
- * This class is responsible for:
- * 1. Loading configuration before test execution
- * 2. Initializing WebDriver based on the browser parameter
- * 3. Navigating to the application URL
- * 4. Closing the browser after each test method
- * It acts as a parent class for all test classes to ensure
- * reusable and consistent test execution flow.
  */
 public class BaseTest {
-    /**
-     * WebDriver instance used for browser interactions.
-     */
+    private static final Logger log = LogManager.getLogger(BaseTest.class);
     public WebDriver driver;
+
     /**
      * Loads configuration before the test suite starts.
-     * This ensures all required properties are available for tests.
      */
     @BeforeSuite
     public void setupSuite() {
+        log.info("========== Test Suite Execution Started ==========");
+        log.info("Loading configuration file...");
         ConfigReader.loadConfig();
+        log.info("Configuration loaded successfully");
     }
+
     /**
      * Initializes the browser before each test method.
-     *
-     * @param browser the browser type passed from TestNG XML (e.g., chrome, edge)
-     *
-     * This method:
-     * 1. Creates WebDriver instance using DriverFactory
-     * 2. Launches the application using base URL from config file
      */
     @BeforeMethod
     @Parameters("browser")
     public void openBrowser(String browser) {
-
+        log.info("--------------------------------------------------");
+        log.info("Starting new test execution");
+        log.info("Launching browser: {}", browser);
         driver = DriverFactory.initDriver(browser);
-
-        driver.get(ConfigReader.get("baseUrl"));
+        String url = ConfigReader.get("baseUrl");
+        log.info("Navigating to URL: {}", url);
+        driver.get(url);
+        log.info("Application launched successfully");
     }
+
     /**
      * Closes the browser after each test method execution.
-     * Ensures proper cleanup and avoids memory leaks.
      */
     @AfterMethod
     public void tearDown() {
+        log.info("Closing browser");
         DriverFactory.quitDriver();
+        log.info("Test execution completed");
+        log.info("--------------------------------------------------");
     }
 }

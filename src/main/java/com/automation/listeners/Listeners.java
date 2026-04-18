@@ -1,85 +1,88 @@
-package com.automation.tests.testcomponents;
+package com.automation.listeners;
 
-import com.automation.testutils.TestUtils;
-import com.automation.resources.ExtentReportsNG;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-
+import com.automation.reports.ExtentManager;
+import com.automation.resources.driver.DriverFactory;
+import com.automation.utils.TestUtils;
+import com.aventstack.extentreports.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+import org.testng.*;
 
 import java.io.IOException;
+
 /**
  * Listeners class implements TestNG's ITestListener interface
  * to track test execution events and generate Extent Reports.
- *
- * It logs test status (pass/fail) and captures screenshots on failure,
- * attaching them to the report for better debugging and analysis.
  */
-public class Listeners implements ITestListener{
+public class Listeners implements ITestListener {
     /**
-     * ExtentTest instance used to log test steps and status.
+     * Logger instance for Listeners class.
      */
-    ExtentTest test;
+    private static final Logger log = LogManager.getLogger(Listeners.class);
+    /**
+     * Thread-safe ExtentTest instance.
+     */
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     /**
      * ExtentReports instance used to generate the HTML report.
      */
-    ExtentReports extent= ExtentReportsNG.getReport();
-    /**
-     * Invoked when a test method starts execution.
-     * Creates a new test entry in the Extent Report.
-     *
-     * @param result contains information about the current test
-     */
+    ExtentReports extent = ExtentManager.getReport();
+
     @Override
     public void onTestStart(ITestResult result) {
-        test = extent.createTest(result.getMethod().getMethodName());
 
+        String testName = result.getMethod().getMethodName();
+
+        log.info("Test Started: {}", testName);
+
+        ExtentTest extentTest = extent.createTest(testName);
+        test.set(extentTest);
     }
-    /**
-     * Invoked when a test method passes successfully.
-     * Logs the pass status in the Extent Report.
-     *
-     * @param result contains information about the current test
-     */
 
     @Override
     public void onTestSuccess(ITestResult result) {
-    test.log(Status.PASS,"Test Passed");
+
+        String testName = result.getMethod().getMethodName();
+
+        log.info("Test Passed: {}", testName);
+
+        test.get().log(Status.PASS, "Test Passed");
     }
-    /**
-     * Invoked when a test method fails.
-     * Logs the failure details and captures a screenshot,
-     * which is then attached to the Extent Report.
-     *
-     * @param result contains information about the failed test
-     */
 
     @Override
     public void onTestFailure(ITestResult result) {
-        test.fail(result.getThrowable());
-        WebDriver driver = ((BaseTest) result.getInstance()).driver;
-        String filepath=null;
+        String testName = result.getMethod().getMethodName();
+        log.error("Test Failed: {}", testName);
+        log.error("Failure Reason: ", result.getThrowable());
+        test.get().fail(result.getThrowable());
+        WebDriver driver = DriverFactory.getDriver();
         try {
-            filepath = TestUtils.takeScreenshot(driver, result.getMethod().getMethodName());
+            String filepath = TestUtils.takeScreenshot(driver, testName);
+            log.info("Screenshot captured at: {}", filepath);
+            test.get().addScreenCaptureFromPath(filepath, testName);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            log.error("Failed to capture screenshot", e);
         }
-
-        test.addScreenCaptureFromPath(filepath, result.getMethod().getMethodName());
     }
-    /**
-     * Invoked after all tests in the suite have finished execution.
-     * Flushes the Extent Report to write all logs to the HTML file.
-     *
-     * @param context provides test execution context
-     */
+
+    @Override
+    public void onTestSkipped(ITestResult result) {
+        String testName = result.getMethod().getMethodName();
+        log.warn("Test Skipped: {}", testName);
+        test.get().log(Status.SKIP, "Test Skipped");
+    }
+
+    @Override
+    public void onStart(ITestContext context) {
+        log.info("========== Test Execution Started ==========");
+    }
+
     @Override
     public void onFinish(ITestContext context) {
+        log.info("========== Test Execution Finished ==========");
+        log.info("Flushing Extent Report...");
         extent.flush();
+        log.info("Extent Report generated successfully");
     }
-    }
-
+}
