@@ -34,6 +34,11 @@ cross-browser support, and reporting features.
 - Extent Reports
 
 ---
+## Architecture Design
+
+![Architecture Diagram](docs/ArchitectureDiagram.png)
+
+---
 
 ## Test Scenarios Covered ##
 
