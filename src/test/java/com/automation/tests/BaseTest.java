@@ -1,7 +1,7 @@
 package com.automation.tests.testcomponents;
 
+import com.automation.resources.driver.DriverFactory;
 import com.automation.testutils.ConfigReader;
-import com.automation.testutils.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 /**

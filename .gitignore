@@ -1,10 +1,11 @@
-# Maven target folder
+# Build & Maven
 /target/
 
-# Compiled class files
+# Compiled files
 *.class
 
 # Logs
+/logs/
 *.log
 
 # OS files
@@ -16,28 +17,18 @@ Thumbs.db
 *.iml
 *.ipr
 *.iws
-
-
-# IntelliJ
 out/
 
-# Allure Reports
-target/
+# Test Reports
 allure-results/
 allure-report/
-
-# Extent Reports
-reports/
-target/reports/
-
-# Test output
 test-output/
+reports/
 
 # Screenshots
-screenshots/
-*.png
+/screenshots/
 
-# Temporary files
+# Temp files
 *.tmp
 *.bak
 *.swp

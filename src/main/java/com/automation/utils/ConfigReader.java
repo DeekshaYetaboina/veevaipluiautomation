@@ -1,48 +1,53 @@
 package com.automation.testutils;
-import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.Properties;
 /**
  * ConfigReader class provides utility methods for:
  * 1. Loading configuration properties from a file
  * 2. Fetching configuration values using keys
- *
  * This class helps in managing environment-specific data
  */
 public class ConfigReader {
-    /**
-     * Properties object to store key-value pairs from config file.
-     */
+
     private static Properties prop;
+
     /**
      * Loads the configuration file into memory.
-     *
      * Reads the config.properties file from the resources folder
      * and initializes the Properties object.
-     *
      * @throws RuntimeException if the config file cannot be loaded
      */
     public static void loadConfig() {
         try {
-            FileInputStream fis = new FileInputStream(
-                    System.getProperty("user.dir")
-                            + "/src/main/java/com/automation/resources/config/config.properties"
-            );
+            InputStream is = ConfigReader.class
+                    .getClassLoader()
+                    .getResourceAsStream("config.properties");
+
+            if (is == null) {
+                throw new RuntimeException("config.properties not found in resources");
+            }
 
             prop = new Properties();
-            prop.load(fis);
+            prop.load(is);
 
         } catch (Exception e) {
-            throw new RuntimeException("Failed to load config file");
+            throw new RuntimeException("Failed to load config file", e);
         }
     }
+
     /**
-     * Retrieves the value associated with the given key
-     * from the loaded configuration.
+     * Returns value for given key.
      *
-     * @param key the property key to fetch
-     * @return the value corresponding to the given key
+     * @param key property key
+     * @return value
      */
     public static String get(String key) {
-        return prop.getProperty(key);
+        String value = prop.getProperty(key);
+
+        if (value == null) {
+            throw new RuntimeException("Key not found in config: " + key);
+        }
+
+        return value;
     }
 }
