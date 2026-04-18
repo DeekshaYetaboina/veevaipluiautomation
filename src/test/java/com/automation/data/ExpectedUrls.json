@@ -1,0 +1,15 @@
+{
+  "header": "TEAMS",
+    "expectedUrls": [
+      "https://documents.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
+      "https://documents.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
+      "https://documents.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
+      "https://documents.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
+      "https://documents.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
+      "https://documents.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
+      "https://documents.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
+      "https://documents.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
+      "https://documents.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
+      "https://documents.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png"
+    ]
+  }

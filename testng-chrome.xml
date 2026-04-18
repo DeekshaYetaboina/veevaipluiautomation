@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="chrome"/>
+    <listeners>
+        <listener class-name="com.automation.listeners.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="TestAutomation">
+        <classes>
+            <class name="com.automation.tests.CheckFooterLinksUITest"/>
+            <class name ="com.automation.tests.VerifyLogoAndYearsTest"/>
+            <class name ="com.automation.tests.VerifySearchResultsTest"/>
+            <class name="com.automation.tests.VerifyPointsTable"/>
+        </classes>
+    </test>
+</suite>
