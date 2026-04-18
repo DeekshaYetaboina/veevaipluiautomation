@@ -104,7 +104,6 @@ git clone
 ### Using TestNG XML ###
 
 For Chrome: testng-chrome.xml
-
 For Edge: testng-edge.xml
 
 
@@ -117,13 +116,6 @@ Supported browsers:
 - Google Chrome
 - Microsoft Edge
 
-Configured using TestNG parameter:
-
-```xml
-
-<parameter name="browser" value="chrome"/>
-```
-
 ---
 
 ## Extent Report ##
@@ -132,8 +124,27 @@ Generated at: /reports/index.html
 
 ---
 
+## Logging ##
+
+Implemented using Log4j2
+Logs stored at: /target/logs/framework.log
+
+---
+
 ## Screenshot Feature ##
 
 - Screenshots are automatically captured when a test fails
 - Saved in the `/reports` folder
-- Attached to the Extent Report for easier debugging  
+- Attached to the Extent Report for easier debugging
+
+---
+
+## Git & Project Hygiene ##
+
+Ignored unnecessary files:
+
+- /target/
+- /reports/
+- /allure-results/
+- /logs/
+- Clean and structured commits
