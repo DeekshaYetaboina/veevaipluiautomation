@@ -34,11 +34,6 @@ cross-browser support, and reporting features.
 - Extent Reports
 
 ---
-## Architecture Design
-
-![Architecture Diagram](docs/ArchitectureDiagram.png)
-
----
 
 ## Test Scenarios Covered ##
 
@@ -102,14 +97,33 @@ git clone
 
 ### Using Maven ###
 
-    mvn test
+    mvn test -Pchrome
+    mvn test -Pedge
 
 ---
 
-### Using TestNG XML ###
+## Using TestNG XML ##
+### Execution Flow
 
-For Chrome: testng-chrome.xml
-For Edge: testng-edge.xml
+1. Test execution is triggered using the selected TestNG XML file.
+2. The XML file passes the `browser` parameter (`chrome` or `edge`) to the test classes.
+3. The `BaseTest` class receives this parameter and calls `DriverFactory.initDriver(browser)`.
+
+### Chrome Execution
+`testng-chrome.xml`
+- `DriverFactory` uses **WebDriverManager** to automatically download and configure the latest compatible ChromeDriver.
+- Chrome browser is launched.
+- The application URL is opened.
+- Test cases are executed.
+
+### Edge Execution
+`testng-edge.xml`
+- `DriverFactory` first attempts to use **WebDriverManager** to download and configure EdgeDriver.
+- If WebDriverManager fails (e.g., version mismatch or network issue):
+    - It falls back to a locally available EdgeDriver (stored in the project).
+- Edge browser is launched.
+- The application URL is opened.
+- Test cases are executed.
 
 ---
 

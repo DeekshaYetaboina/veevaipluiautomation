@@ -3,14 +3,14 @@
 <suite name="All Test Suite">
     <parameter name="browser" value="chrome"/>
     <listeners>
-        <listener class-name="com.automation.listeners.Listeners"/>
+        <listener class-name="veeva.ipl.automation.listeners.Listeners"/>
     </listeners>
     <test verbose="2" preserve-order="true" name="TestAutomation">
         <classes>
-            <class name="com.automation.tests.CheckFooterLinksUITest"/>
-            <class name ="com.automation.tests.VerifyLogoAndYearsTest"/>
-            <class name ="com.automation.tests.VerifySearchResultsTest"/>
-            <class name="com.automation.tests.VerifyPointsTable"/>
+<!--            <class name="veeva.ipl.automation.tests.CheckFooterLinksUITest"/>-->
+            <class name="veeva.ipl.automation.tests.VerifyLogoAndYearsTest"/>
+            <class name="veeva.ipl.automation.tests.VerifySearchResultsTest"/>
+            <class name="veeva.ipl.automation.tests.VerifyPointsTable"/>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,5 @@
+veeva\ipl\automation\tests\BaseTest.class
+veeva\ipl\automation\tests\CheckFooterLinksUITest.class
+veeva\ipl\automation\tests\VerifyLogoAndYearsTest.class
+veeva\ipl\automation\tests\VerifyPointsTable.class
+veeva\ipl\automation\tests\VerifySearchResultsTest.class

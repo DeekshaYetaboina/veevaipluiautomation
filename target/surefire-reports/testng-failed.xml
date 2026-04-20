@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="veeva.ipl.automation.listeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="TestAutomation(failed)" verbose="0">
+    <classes>
+      <class name="veeva.ipl.automation.tests.VerifyLogoAndYearsTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="setupSuite"/>
+          <include name="verifyYears"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- veeva.ipl.automation.tests.VerifyLogoAndYearsTest -->
+    </classes>
+  </test> <!-- TestAutomation(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
