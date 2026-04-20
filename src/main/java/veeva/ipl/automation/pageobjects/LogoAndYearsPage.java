@@ -1,7 +1,7 @@
 package veeva.ipl.automation.pageobjects;
 
 import veeva.ipl.automation.abstractcomponents.AbstractComponents;
-import veeva.ipl.automation.webutils.SeleniumUtils;
+import veeva.ipl.automation.webutils.WebUtils;
 import veeva.ipl.automation.locators.IPLPageSelectors;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +18,7 @@ import java.util.List;
  * - Winning years displayed on hover
  */
 public class LogoAndYearsPage extends AbstractComponents {
-    SeleniumUtils seleniumUtils;
+    WebUtils webUtils;
 
     /**
      * Constructor to initialize WebDriver and utilities.
@@ -27,7 +27,7 @@ public class LogoAndYearsPage extends AbstractComponents {
      */
     public LogoAndYearsPage(WebDriver driver) {
         super(driver);
-        seleniumUtils = new SeleniumUtils(driver);
+        webUtils = new WebUtils(driver);
     }
 
     /**
@@ -66,7 +66,7 @@ public class LogoAndYearsPage extends AbstractComponents {
         List<String> years = new ArrayList<>();
         List<WebElement> cards = driver.findElements(teamCards);
         for (WebElement card : cards) {
-            seleniumUtils.moveToElement(card);
+            webUtils.moveToElement(card);
             WebElement hover = card.findElement(By.cssSelector(IPLPageSelectors.teamWinningYears));
             String year = hover.getText();
             years.add(year);

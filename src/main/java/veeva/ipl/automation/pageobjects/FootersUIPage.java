@@ -2,7 +2,7 @@ package veeva.ipl.automation.pageobjects;
 
 import veeva.ipl.automation.abstractcomponents.AbstractComponents;
 import veeva.ipl.automation.locators.IPLPageSelectors;
-import veeva.ipl.automation.webutils.SeleniumUtils;
+import veeva.ipl.automation.webutils.WebUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,7 @@ import java.util.Map;
  * It extends AbstractComponents to reuse common UI actions.
  */
 public class FootersUIPage extends AbstractComponents {
-    SeleniumUtils seleniumUtils;
+    WebUtils webUtils;
 
     /**
      * Constructor to initialize WebDriver and utilities.
@@ -26,7 +26,7 @@ public class FootersUIPage extends AbstractComponents {
      */
     public FootersUIPage(WebDriver driver) {
         super(driver);
-        seleniumUtils = new SeleniumUtils(driver);
+        webUtils = new WebUtils(driver);
     }
 
     /**
@@ -46,8 +46,8 @@ public class FootersUIPage extends AbstractComponents {
      * Scrolls to the footer section after ensuring it is visible.
      */
     public void goToFooter() {
-        seleniumUtils.waitForElementToAppear(footer);
-        seleniumUtils.scrollToElement(footer);
+        webUtils.waitForElementToAppear(footer);
+        webUtils.scrollToElement(footer);
     }
 
     /**
@@ -57,13 +57,12 @@ public class FootersUIPage extends AbstractComponents {
      */
     public List<String> getActualValues() {
         List<String> text = new ArrayList<>();
-        seleniumUtils.waitForElementToAppear(menuSections);
-        List<WebElement> sections = driver.findElements(menuSections);
-        seleniumUtils.waitForElementToAppear(sections.getFirst());
+        List<WebElement> sections = webUtils.waitForElementsToAppear(menuSections);
         for (WebElement section : sections) {
-            String value = section.getText().replaceAll("\n", " ").trim();
+            String value = section.getText().replace("\n", " ").trim();
             text.add(value);
         }
+
         return text;
     }
 
@@ -76,9 +75,8 @@ public class FootersUIPage extends AbstractComponents {
         String footerPageUrl = driver.getCurrentUrl();
         Map<String, String> expectedVsActual = new HashMap<>();
         List<String> urls = new ArrayList<>();
-        seleniumUtils.waitForElementToAppear(footerLinks);
+        webUtils.waitForElementToAppear(footerLinks);
         List<WebElement> links = driver.findElements(footerLinks);
-        seleniumUtils.waitForElementToAppear(links.getFirst());
         for (WebElement link : links) {
             String href = link.getAttribute("href");
             if (href != null && !href.isEmpty()) {
@@ -87,7 +85,7 @@ public class FootersUIPage extends AbstractComponents {
         }
         for (String url : urls) {
             driver.get(url);
-            seleniumUtils.waitForUrlToLoad(url);
+            webUtils.waitForUrlToLoad(url);
             expectedVsActual.put(url, driver.getCurrentUrl());
             driver.get(footerPageUrl);
             goToFooter();

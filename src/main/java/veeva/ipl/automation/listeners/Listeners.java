@@ -23,7 +23,7 @@ public class Listeners implements ITestListener {
     /**
      * Thread-safe ExtentTest instance.
      */
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     /**
      * ExtentReports instance used to generate the HTML report.
      */

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 /**
  * SeleniumUtils provides reusable methods for:
@@ -16,25 +17,24 @@ import java.time.Duration;
  * - Scrolling
  * Helps in handling synchronization issues.
  */
-public class SeleniumUtils {
+public class WebUtils {
     WebDriver driver;
+    WebDriverWait wait;
 
     /**
      * Constructor to initialize WebDriver.
-     *
      * @param driver WebDriver instance
      */
-    public SeleniumUtils(WebDriver driver) {
+    public WebUtils(WebDriver driver) {
         this.driver = driver;
-    }
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            }
 
     /**
      * Waits for element to be visible.
-     *
      * @param element WebElement to wait for
      */
     public void waitForElementToAppear(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
@@ -44,7 +44,6 @@ public class SeleniumUtils {
      * @param locator By locator
      */
     public void waitForElementToAppear(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
@@ -64,7 +63,6 @@ public class SeleniumUtils {
      * @param expectedUrl expected URL
      */
     public void waitForUrlToLoad(String expectedUrl) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe(expectedUrl));
     }
 
@@ -77,5 +75,9 @@ public class SeleniumUtils {
         Actions actions = new Actions(driver);
         WebElement element = driver.findElement(locator);
         actions.scrollToElement(element).perform();
+    }
+
+    public List<WebElement> waitForElementsToAppear(By locator) {
+        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
     }
 }

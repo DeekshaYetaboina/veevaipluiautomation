@@ -2,7 +2,7 @@ package veeva.ipl.automation.pageobjects;
 
 import veeva.ipl.automation.abstractcomponents.AbstractComponents;
 import veeva.ipl.automation.locators.IPLPageSelectors;
-import veeva.ipl.automation.webutils.SeleniumUtils;
+import veeva.ipl.automation.webutils.WebUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ import java.util.List;
  * SearchResultsPage handles search functionality in the News section.
  */
 public class SearchResultsPage extends AbstractComponents {
-    SeleniumUtils seleniumUtils;
+    WebUtils webUtils;
 
     /**
      * Constructor to initialize WebDriver and utilities.
@@ -24,7 +24,7 @@ public class SearchResultsPage extends AbstractComponents {
      */
     public SearchResultsPage(WebDriver driver) {
         super(driver);
-        seleniumUtils = new SeleniumUtils(driver);
+        webUtils = new WebUtils(driver);
     }
 
     /**
@@ -48,9 +48,9 @@ public class SearchResultsPage extends AbstractComponents {
      * @param searchText text to search
      */
     public void navigateToNewsSection(String searchText) {
-        seleniumUtils.waitForUrlToLoad("https://www.iplt20.com/news");
+        webUtils.waitForUrlToLoad("https://www.iplt20.com/news");
         driver.findElement(searchButton).click();
-        seleniumUtils.waitForElementToAppear(searchTab);
+        webUtils.waitForElementToAppear(searchTab);
         WebElement search = driver.findElement(searchTab);
         search.sendKeys(searchText, Keys.ENTER);
     }
@@ -62,7 +62,7 @@ public class SearchResultsPage extends AbstractComponents {
      */
     public List<String> verifySearchResultsPage() {
         List<String> articleTitles = new ArrayList<>();
-        seleniumUtils.waitForElementToAppear(newsSection);
+        webUtils.waitForElementToAppear(newsSection);
         List<WebElement> articles = driver.findElements(allArticles);
         for (WebElement article : articles) {
             articleTitles.add(article.getText().toLowerCase());

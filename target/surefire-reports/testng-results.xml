@@ -1,153 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-20T16:17:49 IST" name="All Test Suite" finished-at="2026-04-20T16:18:26 IST" duration-ms="36950">
+  <suite started-at="2026-04-20T20:20:38 IST" name="All Test Suite" finished-at="2026-04-20T20:22:51 IST" duration-ms="133680">
     <groups>
     </groups>
-    <test started-at="2026-04-20T16:17:49 IST" name="TestAutomation" finished-at="2026-04-20T16:18:26 IST" duration-ms="36950">
+    <test started-at="2026-04-20T20:20:38 IST" name="TestAutomation" finished-at="2026-04-20T20:22:51 IST" duration-ms="133680">
       <class name="veeva.ipl.automation.tests.VerifySearchResultsTest">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.VerifySearchResultsTest@497570fb]" started-at="2026-04-20T16:18:10 IST" name="openBrowser" finished-at="2026-04-20T16:18:17 IST" duration-ms="7247" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.VerifySearchResultsTest@26d10f2e]" started-at="2026-04-20T20:22:28 IST" name="openBrowser" finished-at="2026-04-20T20:22:42 IST" duration-ms="13650" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.VerifySearchResultsTest@497570fb]" started-at="2026-04-20T16:18:17 IST" name="initialize" finished-at="2026-04-20T16:18:17 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.VerifySearchResultsTest@26d10f2e]" started-at="2026-04-20T20:22:42 IST" name="initialize" finished-at="2026-04-20T20:22:42 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifySearchResultsPage()[pri:0, instance:veeva.ipl.automation.tests.VerifySearchResultsTest@497570fb]" started-at="2026-04-20T16:18:17 IST" name="verifySearchResultsPage" finished-at="2026-04-20T16:18:21 IST" duration-ms="4408" status="PASS">
+        <test-method signature="verifySearchResultsPage()[pri:0, instance:veeva.ipl.automation.tests.VerifySearchResultsTest@26d10f2e]" started-at="2026-04-20T20:22:42 IST" name="verifySearchResultsPage" finished-at="2026-04-20T20:22:47 IST" duration-ms="4538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResultsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.VerifySearchResultsTest@497570fb]" started-at="2026-04-20T16:18:21 IST" name="tearDown" finished-at="2026-04-20T16:18:22 IST" duration-ms="432" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.VerifySearchResultsTest@26d10f2e]" started-at="2026-04-20T20:22:47 IST" name="tearDown" finished-at="2026-04-20T20:22:47 IST" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- veeva.ipl.automation.tests.VerifySearchResultsTest -->
       <class name="veeva.ipl.automation.tests.VerifyLogoAndYearsTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:17:49 IST" name="setupSuite" finished-at="2026-04-20T16:17:49 IST" duration-ms="41" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:17:49 IST" name="openBrowser" finished-at="2026-04-20T16:17:58 IST" duration-ms="8558" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@70f43b45]" started-at="2026-04-20T20:22:07 IST" name="openBrowser" finished-at="2026-04-20T20:22:21 IST" duration-ms="14122" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:17:58 IST" name="initialize" finished-at="2026-04-20T16:17:58 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="verifyLogos()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:17:58 IST" name="verifyLogos" finished-at="2026-04-20T16:17:59 IST" duration-ms="992" status="PASS">
+        <test-method signature="verifyLogos()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@70f43b45]" started-at="2026-04-20T20:22:21 IST" name="verifyLogos" finished-at="2026-04-20T20:22:22 IST" duration-ms="947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogos -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:17:59 IST" name="tearDown" finished-at="2026-04-20T16:17:59 IST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@70f43b45]" started-at="2026-04-20T20:22:21 IST" name="initialize" finished-at="2026-04-20T20:22:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@70f43b45]" started-at="2026-04-20T20:22:22 IST" name="tearDown" finished-at="2026-04-20T20:22:22 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:17:59 IST" name="openBrowser" finished-at="2026-04-20T16:18:06 IST" duration-ms="6947" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@70f43b45]" started-at="2026-04-20T20:22:22 IST" name="openBrowser" finished-at="2026-04-20T20:22:26 IST" duration-ms="3136" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:18:06 IST" name="initialize" finished-at="2026-04-20T16:18:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@70f43b45]" started-at="2026-04-20T20:22:26 IST" name="initialize" finished-at="2026-04-20T20:22:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyYears()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:18:06 IST" name="verifyYears" finished-at="2026-04-20T16:18:09 IST" duration-ms="2689" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected Actual Years differ: Lists differ at element [0]: 200 | 2011 | 2018 | 2021 | 2023 != 2010 | 2011 | 2018 | 2021 | 2023 expected [200 | 2011 | 2018 | 2021 | 2023] but found [2010 | 2011 | 2018 | 2021 | 2023]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected Actual Years differ: Lists differ at element [0]: 200 | 2011 | 2018 | 2021 | 2023 != 2010 | 2011 | 2018 | 2021 | 2023 expected [200 | 2011 | 2018 | 2021 | 2023] but found [2010 | 2011 | 2018 | 2021 | 2023]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:1656)
-at veeva.ipl.automation.tests.VerifyLogoAndYearsTest.verifyYears(VerifyLogoAndYearsTest.java:69)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyYears()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@70f43b45]" started-at="2026-04-20T20:22:26 IST" name="verifyYears" finished-at="2026-04-20T20:22:28 IST" duration-ms="2560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyYears -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@46baf579]" started-at="2026-04-20T16:18:09 IST" name="tearDown" finished-at="2026-04-20T16:18:10 IST" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.VerifyLogoAndYearsTest@70f43b45]" started-at="2026-04-20T20:22:28 IST" name="tearDown" finished-at="2026-04-20T20:22:28 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- veeva.ipl.automation.tests.VerifyLogoAndYearsTest -->
-      <class name="veeva.ipl.automation.tests.VerifyPointsTable">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.VerifyPointsTable@412c995d]" started-at="2026-04-20T16:18:22 IST" name="openBrowser" finished-at="2026-04-20T16:18:25 IST" duration-ms="2951" status="PASS">
+      <class name="veeva.ipl.automation.tests.CheckFooterLinksUITest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:veeva.ipl.automation.tests.CheckFooterLinksUITest@6058e535]" started-at="2026-04-20T20:20:38 IST" name="setupSuite" finished-at="2026-04-20T20:20:38 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.CheckFooterLinksUITest@6058e535]" started-at="2026-04-20T20:20:38 IST" name="openBrowser" finished-at="2026-04-20T20:20:53 IST" duration-ms="15223" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.VerifyPointsTable@412c995d]" started-at="2026-04-20T16:18:25 IST" name="initialize" finished-at="2026-04-20T16:18:25 IST" duration-ms="2" status="PASS">
+        <test-method signature="checkFooterLinks()[pri:0, instance:veeva.ipl.automation.tests.CheckFooterLinksUITest@6058e535]" started-at="2026-04-20T20:20:53 IST" name="checkFooterLinks" finished-at="2026-04-20T20:22:06 IST" duration-ms="72504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFooterLinks -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.CheckFooterLinksUITest@6058e535]" started-at="2026-04-20T20:20:53 IST" name="initialize" finished-at="2026-04-20T20:20:53 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyPointsTable()[pri:0, instance:veeva.ipl.automation.tests.VerifyPointsTable@412c995d]" started-at="2026-04-20T16:18:25 IST" name="verifyPointsTable" finished-at="2026-04-20T16:18:26 IST" duration-ms="1465" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.CheckFooterLinksUITest@6058e535]" started-at="2026-04-20T20:22:06 IST" name="tearDown" finished-at="2026-04-20T20:22:07 IST" duration-ms="1373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- veeva.ipl.automation.tests.CheckFooterLinksUITest -->
+      <class name="veeva.ipl.automation.tests.VerifyPointsTable">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:veeva.ipl.automation.tests.VerifyPointsTable@10ad20cb]" started-at="2026-04-20T20:22:47 IST" name="openBrowser" finished-at="2026-04-20T20:22:50 IST" duration-ms="3099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:veeva.ipl.automation.tests.VerifyPointsTable@10ad20cb]" started-at="2026-04-20T20:22:50 IST" name="initialize" finished-at="2026-04-20T20:22:50 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyPointsTable()[pri:0, instance:veeva.ipl.automation.tests.VerifyPointsTable@10ad20cb]" started-at="2026-04-20T20:22:50 IST" name="verifyPointsTable" finished-at="2026-04-20T20:22:51 IST" duration-ms="1192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPointsTable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.VerifyPointsTable@412c995d]" started-at="2026-04-20T16:18:26 IST" name="tearDown" finished-at="2026-04-20T16:18:26 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:veeva.ipl.automation.tests.VerifyPointsTable@10ad20cb]" started-at="2026-04-20T20:22:51 IST" name="tearDown" finished-at="2026-04-20T20:22:51 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

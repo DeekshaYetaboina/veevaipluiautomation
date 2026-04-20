@@ -26,7 +26,7 @@ public class DriverFactory {
     /**
      * ThreadLocal WebDriver instance to support parallel test execution.
      */
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     /**
      * Initializes WebDriver based on the given browser type.

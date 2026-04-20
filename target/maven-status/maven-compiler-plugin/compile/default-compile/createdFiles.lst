@@ -10,4 +10,4 @@ veeva\ipl\automation\utils\TestUtils.class
 veeva\ipl\automation\listeners\Listeners.class
 veeva\ipl\automation\utils\ConfigReader.class
 veeva\ipl\automation\abstractcomponents\AbstractComponents.class
-veeva\ipl\automation\webutils\SeleniumUtils.class
+veeva\ipl\automation\webutils\WebUtils.class

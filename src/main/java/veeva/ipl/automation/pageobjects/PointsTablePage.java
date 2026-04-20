@@ -2,7 +2,7 @@ package veeva.ipl.automation.pageobjects;
 
 import veeva.ipl.automation.abstractcomponents.AbstractComponents;
 import veeva.ipl.automation.locators.IPLPageSelectors;
-import veeva.ipl.automation.webutils.SeleniumUtils;
+import veeva.ipl.automation.webutils.WebUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
  * PointsTablePage handles interactions with the IPL points table.
  */
 public class PointsTablePage extends AbstractComponents {
-    SeleniumUtils seleniumUtils;
+    WebUtils webUtils;
 
     /**
      * Constructor to initialize WebDriver and utilities.
@@ -19,7 +19,7 @@ public class PointsTablePage extends AbstractComponents {
      */
     public PointsTablePage(WebDriver driver) {
         super(driver);
-        seleniumUtils = new SeleniumUtils(driver);
+        webUtils = new WebUtils(driver);
     }
 
     By pointsTable = By.cssSelector(IPLPageSelectors.pointsTable);
@@ -33,7 +33,7 @@ public class PointsTablePage extends AbstractComponents {
      * @return top team name
      */
     public String getTopTeam() {
-        return driver.findElements(teams).getFirst().getText();
+        return driver.findElements(teams).get(0).getText();
     }
 
     /**
@@ -42,7 +42,7 @@ public class PointsTablePage extends AbstractComponents {
      * @return matches played
      */
     public String getActualMatchesPlayed() {
-        return driver.findElements(matchesPlayed).getFirst().getText();
+        return driver.findElements(matchesPlayed).get(0).getText();
     }
 
     /**
@@ -51,7 +51,7 @@ public class PointsTablePage extends AbstractComponents {
      * @return points scored
      */
     public String getActualPoints() {
-        return driver.findElements(points).getFirst().getText();
+        return driver.findElements(points).get(0).getText();
     }
 
     /**
@@ -62,6 +62,6 @@ public class PointsTablePage extends AbstractComponents {
     @Override
     public void execute(String header) {
         super.execute(header);
-        seleniumUtils.waitForElementToAppear(pointsTable);
+        webUtils.waitForElementToAppear(pointsTable);
     }
 }

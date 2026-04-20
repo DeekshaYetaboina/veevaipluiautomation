@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="39.648" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="135.952" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\HI\.cache\selenium\chromedriver\win64\147.0.7727.57\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Projects\selenium-project\target\test-classes;C:\Projects\selenium-project\target\classes;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-java\4.40.0\selenium-java-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-api\4.40.0\selenium-api-4.40.0.jar;C:\Users\HI\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.40.0\selenium-chrome-driver-4.40.0.jar;C:\Users\HI\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.40.0\selenium-chromium-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-json\4.40.0\selenium-json-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.40.0\selenium-manager-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.40.0\selenium-devtools-v142-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.40.0\selenium-devtools-v143-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v144\4.40.0\selenium-devtools-v144-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.40.0\selenium-edge-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.40.0\selenium-firefox-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-http\4.40.0\selenium-http-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.40.0\selenium-ie-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.40.0\selenium-remote-driver-4.40.0.jar;C:\Users\HI\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\HI\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\HI\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HI\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\HI\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-api\1.58.0\opentelemetry-api-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-context\1.58.0\opentelemetry-context-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-common\1.58.0\opentelemetry-common-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.58.0\opentelemetry-exporter-logging-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.58.0\opentelemetry-sdk-common-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.58.0\opentelemetry-sdk-extension-autoconfigure-spi-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.58.0\opentelemetry-sdk-extension-autoconfigure-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.58.0\opentelemetry-sdk-trace-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.58.0\opentelemetry-sdk-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.58.0\opentelemetry-sdk-metrics-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.58.0\opentelemetry-sdk-logs-1.58.0.jar;C:\Users\HI\.m2\repository\net\bytebuddy\byte-buddy\1.18.4\byte-buddy-1.18.4.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-os\4.40.0\selenium-os-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.40.0\selenium-safari-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-support\4.40.0\selenium-support-4.40.0.jar;C:\Users\HI\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\HI\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\HI\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HI\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\HI\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\HI\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.0\jackson-databind-2.21.0.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.0\jackson-core-2.21.0.jar;C:\Users\HI\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\HI\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\HI\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\HI\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\HI\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\HI\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\HI\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\HI\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\HI\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\HI\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\HI\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\HI\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\HI\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\HI\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.23.1\log4j-slf4j2-impl-2.23.1.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;"/>
+    <property name="java.class.path" value="C:\Projects\selenium-project\target\test-classes;C:\Projects\selenium-project\target\classes;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-java\4.40.0\selenium-java-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-api\4.40.0\selenium-api-4.40.0.jar;C:\Users\HI\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.40.0\selenium-chrome-driver-4.40.0.jar;C:\Users\HI\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.40.0\selenium-chromium-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-json\4.40.0\selenium-json-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.40.0\selenium-manager-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.40.0\selenium-devtools-v142-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.40.0\selenium-devtools-v143-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v144\4.40.0\selenium-devtools-v144-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.40.0\selenium-edge-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.40.0\selenium-firefox-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-http\4.40.0\selenium-http-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.40.0\selenium-ie-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.40.0\selenium-remote-driver-4.40.0.jar;C:\Users\HI\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\HI\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\HI\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HI\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\HI\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-api\1.58.0\opentelemetry-api-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-context\1.58.0\opentelemetry-context-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-common\1.58.0\opentelemetry-common-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.58.0\opentelemetry-exporter-logging-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.58.0\opentelemetry-sdk-common-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.58.0\opentelemetry-sdk-extension-autoconfigure-spi-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.58.0\opentelemetry-sdk-extension-autoconfigure-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.58.0\opentelemetry-sdk-trace-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.58.0\opentelemetry-sdk-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.58.0\opentelemetry-sdk-metrics-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.58.0\opentelemetry-sdk-logs-1.58.0.jar;C:\Users\HI\.m2\repository\net\bytebuddy\byte-buddy\1.18.4\byte-buddy-1.18.4.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-os\4.40.0\selenium-os-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.40.0\selenium-safari-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-support\4.40.0\selenium-support-4.40.0.jar;C:\Users\HI\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\HI\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\HI\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HI\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\HI\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\HI\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.0\jackson-databind-2.18.0.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.0\jackson-annotations-2.18.0.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.0\jackson-core-2.18.0.jar;C:\Users\HI\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.3\webdrivermanager-5.9.3.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java\3.4.1\docker-java-3.4.1.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-core\3.4.1\docker-java-core-3.4.1.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-api\3.4.1\docker-java-api-3.4.1.jar;C:\Users\HI\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.1\docker-java-transport-httpclient5-3.4.1.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-transport\3.4.1\docker-java-transport-3.4.1.jar;C:\Users\HI\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\HI\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\HI\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\HI\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\HI\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\HI\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\HI\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\HI\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\HI\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\HI\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.24.0\log4j-slf4j2-impl-2.24.0.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.0\log4j-api-2.24.0.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.0\log4j-core-2.24.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\HI\AppData\Local\Temp\surefire15736306605814802745\surefirebooter-20260420161747525_3.jar C:\Users\HI\AppData\Local\Temp\surefire15736306605814802745 2026-04-20T16-17-47_226-jvmRun1 surefire-20260420161747525_1tmp surefire_0-20260420161747525_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\HI\AppData\Local\Temp\surefire12031385794754184284\surefirebooter-20260420202036381_3.jar C:\Users\HI\AppData\Local\Temp\surefire12031385794754184284 2026-04-20T20-20-36_179-jvmRun1 surefire-20260420202036381_1tmp surefire_0-20260420202036381_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Projects\selenium-project\target\test-classes;C:\Projects\selenium-project\target\classes;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-java\4.40.0\selenium-java-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-api\4.40.0\selenium-api-4.40.0.jar;C:\Users\HI\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.40.0\selenium-chrome-driver-4.40.0.jar;C:\Users\HI\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.40.0\selenium-chromium-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-json\4.40.0\selenium-json-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.40.0\selenium-manager-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.40.0\selenium-devtools-v142-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.40.0\selenium-devtools-v143-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v144\4.40.0\selenium-devtools-v144-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.40.0\selenium-edge-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.40.0\selenium-firefox-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-http\4.40.0\selenium-http-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.40.0\selenium-ie-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.40.0\selenium-remote-driver-4.40.0.jar;C:\Users\HI\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\HI\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\HI\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HI\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\HI\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-api\1.58.0\opentelemetry-api-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-context\1.58.0\opentelemetry-context-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-common\1.58.0\opentelemetry-common-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.58.0\opentelemetry-exporter-logging-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.58.0\opentelemetry-sdk-common-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.58.0\opentelemetry-sdk-extension-autoconfigure-spi-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.58.0\opentelemetry-sdk-extension-autoconfigure-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.58.0\opentelemetry-sdk-trace-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.58.0\opentelemetry-sdk-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.58.0\opentelemetry-sdk-metrics-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.58.0\opentelemetry-sdk-logs-1.58.0.jar;C:\Users\HI\.m2\repository\net\bytebuddy\byte-buddy\1.18.4\byte-buddy-1.18.4.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-os\4.40.0\selenium-os-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.40.0\selenium-safari-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-support\4.40.0\selenium-support-4.40.0.jar;C:\Users\HI\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\HI\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\HI\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HI\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\HI\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\HI\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.0\jackson-databind-2.21.0.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.0\jackson-core-2.21.0.jar;C:\Users\HI\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\HI\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\HI\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\HI\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\HI\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\HI\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\HI\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\HI\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\HI\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\HI\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\HI\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\HI\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\HI\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\HI\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.23.1\log4j-slf4j2-impl-2.23.1.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Projects\selenium-project\target\test-classes;C:\Projects\selenium-project\target\classes;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-java\4.40.0\selenium-java-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-api\4.40.0\selenium-api-4.40.0.jar;C:\Users\HI\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.40.0\selenium-chrome-driver-4.40.0.jar;C:\Users\HI\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.40.0\selenium-chromium-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-json\4.40.0\selenium-json-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.40.0\selenium-manager-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.40.0\selenium-devtools-v142-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.40.0\selenium-devtools-v143-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v144\4.40.0\selenium-devtools-v144-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.40.0\selenium-edge-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.40.0\selenium-firefox-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-http\4.40.0\selenium-http-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.40.0\selenium-ie-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.40.0\selenium-remote-driver-4.40.0.jar;C:\Users\HI\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\HI\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\HI\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HI\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\HI\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-api\1.58.0\opentelemetry-api-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-context\1.58.0\opentelemetry-context-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-common\1.58.0\opentelemetry-common-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.58.0\opentelemetry-exporter-logging-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.58.0\opentelemetry-sdk-common-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.58.0\opentelemetry-sdk-extension-autoconfigure-spi-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.58.0\opentelemetry-sdk-extension-autoconfigure-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.58.0\opentelemetry-sdk-trace-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.58.0\opentelemetry-sdk-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.58.0\opentelemetry-sdk-metrics-1.58.0.jar;C:\Users\HI\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.58.0\opentelemetry-sdk-logs-1.58.0.jar;C:\Users\HI\.m2\repository\net\bytebuddy\byte-buddy\1.18.4\byte-buddy-1.18.4.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-os\4.40.0\selenium-os-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.40.0\selenium-safari-driver-4.40.0.jar;C:\Users\HI\.m2\repository\org\seleniumhq\selenium\selenium-support\4.40.0\selenium-support-4.40.0.jar;C:\Users\HI\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\HI\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\HI\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HI\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\HI\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\HI\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.0\jackson-databind-2.18.0.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.0\jackson-annotations-2.18.0.jar;C:\Users\HI\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.0\jackson-core-2.18.0.jar;C:\Users\HI\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.3\webdrivermanager-5.9.3.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java\3.4.1\docker-java-3.4.1.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-core\3.4.1\docker-java-core-3.4.1.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-api\3.4.1\docker-java-api-3.4.1.jar;C:\Users\HI\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.1\docker-java-transport-httpclient5-3.4.1.jar;C:\Users\HI\.m2\repository\com\github\docker-java\docker-java-transport\3.4.1\docker-java-transport-3.4.1.jar;C:\Users\HI\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\HI\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\HI\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\HI\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\HI\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\HI\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\HI\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\HI\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\HI\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\HI\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\HI\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\HI\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.24.0\log4j-slf4j2-impl-2.24.0.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.0\log4j-api-2.24.0.jar;C:\Users\HI\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.0\log4j-core-2.24.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\HI"/>
     <property name="user.language" value="en"/>
@@ -31,10 +30,11 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\HI\AppData\Local\Temp\surefire15736306605814802745\surefirebooter-20260420161747525_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\HI\AppData\Local\Temp\surefire12031385794754184284\surefirebooter-20260420202036381_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="webdriver.edge.driver" value="C:\Projects\selenium-project/src/main/resources/drivers/msedgedriver.exe"/>
     <property name="user.name" value="HI"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
@@ -51,7 +51,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\HI\OneDrive\Documents\apache-maven-3.9.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Java\jdk-22;C:\Users\HI\scoop\shims;C:\Users\HI\.local\bin;C:\Users\HI\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\HI\AppData\Local\Programs\Python\Python314\;C:\Users\HI\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\HI\AppData\Local\Programs\Python\Python311\;C:\Users\HI\AppData\Local\Microsoft\WindowsApps;C:\Users\HI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HI\AppData\Roaming\npm;D:\Deeksha\Downloads\flutter_windows_3.27.1-stable\flutter\bin;C:\Users\HI\.dotnet\tools;D:\Deeksha\IntelliJ IDEA 2025.2.2\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\HI\scoop\shims;C:\Users\HI\.local\bin;C:\Users\HI\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\HI\AppData\Local\Programs\Python\Python314\;C:\Users\HI\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\HI\AppData\Local\Programs\Python\Python311\;C:\Users\HI\AppData\Local\Microsoft\WindowsApps;C:\Users\HI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HI\AppData\Roaming\npm;D:\Deeksha\Downloads\flutter_windows_3.27.1-stable\flutter\bin;C:\Users\HI\.dotnet\tools;D:\Deeksha\IntelliJ IDEA 2025.2.2\bin;C:\Users\HI\.jdks\ms-17.0.18\bin;C:\apache-maven-3.9.15\bin;C:\Users\HI\scoop\shims;C:\Users\HI\.local\bin;C:\Users\HI\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\HI\AppData\Local\Programs\Python\Python314\;C:\Users\HI\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\HI\AppData\Local\Programs\Python\Python311\;C:\Users\HI\AppData\Local\Microsoft\WindowsApps;C:\Users\HI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HI\AppData\Roaming\npm;D:\Deeksha\Downloads\flutter_windows_3.27.1-stable\flutter\bin;C:\Users\HI\.dotnet\tools;D:\Deeksha\IntelliJ IDEA 2025.2.2\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -59,175 +59,138 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="verifyLogos" classname="veeva.ipl.automation.tests.VerifyLogoAndYearsTest" time="1.004">
-    <system-out><![CDATA[16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 12 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 16 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 16 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-16:17:49 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-16:17:49 INFO  BaseTest - ========== Test Suite Execution Started ==========
-16:17:49 INFO  BaseTest - Loading configuration file...
-16:17:49 INFO  ConfigReader - Loading config.properties file...
-16:17:49 INFO  ConfigReader - Config file loaded successfully
-16:17:49 INFO  BaseTest - Configuration loaded successfully
-16:17:49 INFO  Listeners - ========== Test Execution Started ==========
-16:17:49 INFO  Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 12 ms.
-16:17:49 INFO  BaseTest - --------------------------------------------------
-16:17:49 INFO  BaseTest - Starting new test execution
-16:17:49 INFO  BaseTest - Launching browser: chrome
-16:17:49 INFO  DriverFactory - Initializing WebDriver for browser: chrome
-16:17:49 INFO  DriverFactory - Setting up ChromeDriver
-16:17:50 INFO  WebDriverManager - Using chromedriver 147.0.7727.57 (resolved driver for Chrome 147)
-16:17:50 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HI\.cache\selenium\chromedriver\win64\147.0.7727.57\chromedriver.exe
-16:17:52 INFO  DriverFactory - Browser window maximized
-16:17:52 INFO  DriverFactory - Implicit wait set to 10 seconds
-16:17:52 INFO  DriverFactory - Page load timeout set to 30 seconds
-16:17:52 INFO  DriverFactory - WebDriver initialized successfully
-16:17:52 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
-16:17:52 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
-16:17:58 INFO  BaseTest - Application launched successfully
-16:17:58 INFO  Listeners - Test Started: verifyLogos
-16:17:59 INFO  Listeners - Test Passed: verifyLogos
-]]></system-out>
-    <system-err><![CDATA[Apr 20, 2026 4:17:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 147
-]]></system-err>
-  </testcase>
-  <testcase name="verifyYears" classname="veeva.ipl.automation.tests.VerifyLogoAndYearsTest" time="3.043">
-    <failure message="Expected Actual Years differ: Lists differ at element [0]: 200 | 2011 | 2018 | 2021 | 2023 != 2010 | 2011 | 2018 | 2021 | 2023 expected [200 | 2011 | 2018 | 2021 | 2023] but found [2010 | 2011 | 2018 | 2021 | 2023]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Expected Actual Years differ: Lists differ at element [0]: 200 | 2011 | 2018 | 2021 | 2023 != 2010 | 2011 | 2018 | 2021 | 2023 expected [200 | 2011 | 2018 | 2021 | 2023] but found [2010 | 2011 | 2018 | 2021 | 2023]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:1656)
-	at veeva.ipl.automation.tests.VerifyLogoAndYearsTest.verifyYears(VerifyLogoAndYearsTest.java:69)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[16:17:59 INFO  BaseTest - Closing browser
-16:17:59 INFO  DriverFactory - Quitting WebDriver
-16:17:59 INFO  DriverFactory - WebDriver closed successfully
-16:17:59 INFO  BaseTest - Test execution completed
-16:17:59 INFO  BaseTest - --------------------------------------------------
-16:17:59 INFO  BaseTest - --------------------------------------------------
-16:17:59 INFO  BaseTest - Starting new test execution
-16:17:59 INFO  BaseTest - Launching browser: chrome
-16:17:59 INFO  DriverFactory - Initializing WebDriver for browser: chrome
-16:17:59 INFO  DriverFactory - Setting up ChromeDriver
-16:17:59 INFO  WebDriverManager - Using chromedriver 147.0.7727.57 (resolved driver for Chrome 147)
-16:17:59 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HI\.cache\selenium\chromedriver\win64\147.0.7727.57\chromedriver.exe
-16:18:00 INFO  DriverFactory - Browser window maximized
-16:18:00 INFO  DriverFactory - Implicit wait set to 10 seconds
-16:18:00 INFO  DriverFactory - Page load timeout set to 30 seconds
-16:18:00 INFO  DriverFactory - WebDriver initialized successfully
-16:18:00 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
-16:18:00 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
-16:18:06 INFO  BaseTest - Application launched successfully
-16:18:06 INFO  Listeners - Test Started: verifyYears
-16:18:09 ERROR Listeners - Test Failed: verifyYears
-16:18:09 ERROR Listeners - Failure Reason: 
-java.lang.AssertionError: Expected Actual Years differ: Lists differ at element [0]: 200 | 2011 | 2018 | 2021 | 2023 != 2010 | 2011 | 2018 | 2021 | 2023 expected [200 | 2011 | 2018 | 2021 | 2023] but found [2010 | 2011 | 2018 | 2021 | 2023]
-	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.11.0.jar:7.11.0]
-	at org.testng.Assert.failNotEquals(Assert.java:1590) ~[testng-7.11.0.jar:7.11.0]
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150) ~[testng-7.11.0.jar:7.11.0]
-	at org.testng.Assert.assertEquals(Assert.java:1656) ~[testng-7.11.0.jar:7.11.0]
-	at veeva.ipl.automation.tests.VerifyLogoAndYearsTest.verifyYears(VerifyLogoAndYearsTest.java:69) ~[test-classes/:?]
+  <testcase name="checkFooterLinks" classname="veeva.ipl.automation.tests.CheckFooterLinksUITest" time="72.593">
+    <system-out><![CDATA[20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 13 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 23 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 8 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+20:20:38 INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+20:20:38 INFO  BaseTest - ========== Test Suite Execution Started ==========
+20:20:38 INFO  BaseTest - Loading configuration file...
+20:20:38 INFO  ConfigReader - Loading config.properties file...
+20:20:38 INFO  ConfigReader - Config file loaded successfully
+20:20:38 INFO  BaseTest - Configuration loaded successfully
+20:20:38 INFO  Listeners - ========== Test Execution Started ==========
+20:20:38 INFO  Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 0 ms.
+20:20:38 INFO  BaseTest - --------------------------------------------------
+20:20:38 INFO  BaseTest - Starting new test execution
+20:20:38 INFO  BaseTest - Launching browser: edge
+20:20:38 INFO  DriverFactory - Initializing WebDriver for browser: edge
+20:20:38 INFO  DriverFactory - Setting up EdgeDriver
+20:20:50 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS to get latest version of msedgedriver (No such host is known (msedgedriver.azureedge.net))
+20:20:50 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:20:50 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:20:50 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:20:50 WARN  WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+20:20:50 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:20:50 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:20:50 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:20:50 ERROR WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:298) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:128) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1436) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1262) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1431) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1409) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:421) ~[webdrivermanager-5.9.3.jar:?]
+	at veeva.ipl.automation.drivermanager.DriverFactory.initDriver(DriverFactory.java:46) ~[classes/:?]
+	at veeva.ipl.automation.tests.BaseTest.openBrowser(BaseTest.java:37) ~[test-classes/:?]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601) ~[testng-7.11.0.jar:7.11.0]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
@@ -254,65 +217,479 @@ java.lang.AssertionError: Expected Actual Years differ: Lists differ at element 
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
-16:18:09 INFO  Listeners - Screenshot captured at: verifyYears.png
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:998) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1806) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676) ~[?:?]
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.2.1.jar:5.2.1]
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:257) ~[webdrivermanager-5.9.3.jar:?]
+	... 44 more
+20:20:50 WARN  DriverFactory - WebDriverManager failed, falling back to local EdgeDriver
+20:20:50 INFO  DriverFactory - Using local EdgeDriver path: C:\Projects\selenium-project/src/main/resources/drivers/msedgedriver.exe
+20:20:51 INFO  DriverFactory - Browser window maximized
+20:20:51 INFO  DriverFactory - Implicit wait set to 10 seconds
+20:20:51 INFO  DriverFactory - Page load timeout set to 30 seconds
+20:20:51 INFO  DriverFactory - WebDriver initialized successfully
+20:20:51 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
+20:20:51 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
+20:20:53 INFO  BaseTest - Application launched successfully
+20:20:53 INFO  Listeners - Test Started: checkFooterLinks
+20:22:06 INFO  Listeners - Test Passed: checkFooterLinks
 ]]></system-out>
-    <system-err><![CDATA[Apr 20, 2026 4:18:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Apr 20, 2026 8:20:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 147
 ]]></system-err>
   </testcase>
-  <testcase name="verifySearchResultsPage" classname="veeva.ipl.automation.tests.VerifySearchResultsTest" time="4.416">
-    <system-out><![CDATA[16:18:09 INFO  BaseTest - Closing browser
-16:18:09 INFO  DriverFactory - Quitting WebDriver
-16:18:10 INFO  DriverFactory - WebDriver closed successfully
-16:18:10 INFO  BaseTest - Test execution completed
-16:18:10 INFO  BaseTest - --------------------------------------------------
-16:18:10 INFO  BaseTest - --------------------------------------------------
-16:18:10 INFO  BaseTest - Starting new test execution
-16:18:10 INFO  BaseTest - Launching browser: chrome
-16:18:10 INFO  DriverFactory - Initializing WebDriver for browser: chrome
-16:18:10 INFO  DriverFactory - Setting up ChromeDriver
-16:18:10 INFO  WebDriverManager - Using chromedriver 147.0.7727.57 (resolved driver for Chrome 147)
-16:18:10 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HI\.cache\selenium\chromedriver\win64\147.0.7727.57\chromedriver.exe
-16:18:11 INFO  DriverFactory - Browser window maximized
-16:18:11 INFO  DriverFactory - Implicit wait set to 10 seconds
-16:18:11 INFO  DriverFactory - Page load timeout set to 30 seconds
-16:18:11 INFO  DriverFactory - WebDriver initialized successfully
-16:18:11 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
-16:18:11 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
-16:18:17 INFO  BaseTest - Application launched successfully
-16:18:17 INFO  Listeners - Test Started: verifySearchResultsPage
-16:18:21 INFO  Listeners - Test Passed: verifySearchResultsPage
+  <testcase name="verifyLogos" classname="veeva.ipl.automation.tests.VerifyLogoAndYearsTest" time="0.947">
+    <system-out><![CDATA[20:22:06 INFO  BaseTest - Closing browser
+20:22:06 INFO  DriverFactory - Quitting WebDriver
+20:22:07 INFO  DriverFactory - WebDriver closed successfully
+20:22:07 INFO  BaseTest - Test execution completed
+20:22:07 INFO  BaseTest - --------------------------------------------------
+20:22:07 INFO  BaseTest - --------------------------------------------------
+20:22:07 INFO  BaseTest - Starting new test execution
+20:22:07 INFO  BaseTest - Launching browser: edge
+20:22:07 INFO  DriverFactory - Initializing WebDriver for browser: edge
+20:22:07 INFO  DriverFactory - Setting up EdgeDriver
+20:22:18 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS to get latest version of msedgedriver (No such host is known (msedgedriver.azureedge.net))
+20:22:18 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:18 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:18 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:22:18 WARN  WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+20:22:18 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:18 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:18 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:22:18 ERROR WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:298) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:128) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1436) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1262) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1431) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1409) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:421) ~[webdrivermanager-5.9.3.jar:?]
+	at veeva.ipl.automation.drivermanager.DriverFactory.initDriver(DriverFactory.java:46) ~[classes/:?]
+	at veeva.ipl.automation.tests.BaseTest.openBrowser(BaseTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:998) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1806) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676) ~[?:?]
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.2.1.jar:5.2.1]
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:257) ~[webdrivermanager-5.9.3.jar:?]
+	... 44 more
+20:22:18 WARN  DriverFactory - WebDriverManager failed, falling back to local EdgeDriver
+20:22:18 INFO  DriverFactory - Using local EdgeDriver path: C:\Projects\selenium-project/src/main/resources/drivers/msedgedriver.exe
+20:22:19 INFO  DriverFactory - Browser window maximized
+20:22:19 INFO  DriverFactory - Implicit wait set to 10 seconds
+20:22:19 INFO  DriverFactory - Page load timeout set to 30 seconds
+20:22:19 INFO  DriverFactory - WebDriver initialized successfully
+20:22:19 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
+20:22:19 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
+20:22:21 INFO  BaseTest - Application launched successfully
+20:22:21 INFO  Listeners - Test Started: verifyLogos
+20:22:22 INFO  Listeners - Test Passed: verifyLogos
 ]]></system-out>
-    <system-err><![CDATA[Apr 20, 2026 4:18:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Apr 20, 2026 8:22:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 147
 ]]></system-err>
   </testcase>
-  <testcase name="verifyPointsTable" classname="veeva.ipl.automation.tests.VerifyPointsTable" time="1.479">
-    <system-out><![CDATA[16:18:21 INFO  BaseTest - Closing browser
-16:18:21 INFO  DriverFactory - Quitting WebDriver
-16:18:22 INFO  DriverFactory - WebDriver closed successfully
-16:18:22 INFO  BaseTest - Test execution completed
-16:18:22 INFO  BaseTest - --------------------------------------------------
-16:18:22 INFO  BaseTest - --------------------------------------------------
-16:18:22 INFO  BaseTest - Starting new test execution
-16:18:22 INFO  BaseTest - Launching browser: chrome
-16:18:22 INFO  DriverFactory - Initializing WebDriver for browser: chrome
-16:18:22 INFO  DriverFactory - Setting up ChromeDriver
-16:18:22 INFO  WebDriverManager - Using chromedriver 147.0.7727.57 (resolved driver for Chrome 147)
-16:18:22 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HI\.cache\selenium\chromedriver\win64\147.0.7727.57\chromedriver.exe
-16:18:23 INFO  DriverFactory - Browser window maximized
-16:18:23 INFO  DriverFactory - Implicit wait set to 10 seconds
-16:18:23 INFO  DriverFactory - Page load timeout set to 30 seconds
-16:18:23 INFO  DriverFactory - WebDriver initialized successfully
-16:18:23 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
-16:18:23 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
-16:18:25 INFO  BaseTest - Application launched successfully
-16:18:25 INFO  Listeners - Test Started: verifyPointsTable
-16:18:26 INFO  VerifyPointsTable - Top Team: PBKS
-16:18:26 INFO  VerifyPointsTable - Actual Points: 11, Expected Points: 11
-16:18:26 INFO  Listeners - Test Passed: verifyPointsTable
+  <testcase name="verifyYears" classname="veeva.ipl.automation.tests.VerifyLogoAndYearsTest" time="2.575">
+    <system-out><![CDATA[20:22:22 INFO  BaseTest - Closing browser
+20:22:22 INFO  DriverFactory - Quitting WebDriver
+20:22:22 INFO  DriverFactory - WebDriver closed successfully
+20:22:22 INFO  BaseTest - Test execution completed
+20:22:22 INFO  BaseTest - --------------------------------------------------
+20:22:22 INFO  BaseTest - --------------------------------------------------
+20:22:22 INFO  BaseTest - Starting new test execution
+20:22:22 INFO  BaseTest - Launching browser: edge
+20:22:22 INFO  DriverFactory - Initializing WebDriver for browser: edge
+20:22:22 INFO  DriverFactory - Setting up EdgeDriver
+20:22:23 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:23 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:23 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:23 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:22:23 WARN  WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+20:22:23 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:23 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:23 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:22:23 ERROR WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:298) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:128) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1436) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1262) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1431) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1409) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:421) ~[webdrivermanager-5.9.3.jar:?]
+	at veeva.ipl.automation.drivermanager.DriverFactory.initDriver(DriverFactory.java:46) ~[classes/:?]
+	at veeva.ipl.automation.tests.BaseTest.openBrowser(BaseTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:998) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1806) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676) ~[?:?]
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.2.1.jar:5.2.1]
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:257) ~[webdrivermanager-5.9.3.jar:?]
+	... 44 more
+20:22:23 WARN  DriverFactory - WebDriverManager failed, falling back to local EdgeDriver
+20:22:23 INFO  DriverFactory - Using local EdgeDriver path: C:\Projects\selenium-project/src/main/resources/drivers/msedgedriver.exe
+20:22:24 INFO  DriverFactory - Browser window maximized
+20:22:24 INFO  DriverFactory - Implicit wait set to 10 seconds
+20:22:24 INFO  DriverFactory - Page load timeout set to 30 seconds
+20:22:24 INFO  DriverFactory - WebDriver initialized successfully
+20:22:24 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
+20:22:24 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
+20:22:26 INFO  BaseTest - Application launched successfully
+20:22:26 INFO  Listeners - Test Started: verifyYears
+20:22:28 INFO  Listeners - Test Passed: verifyYears
 ]]></system-out>
-    <system-err><![CDATA[Apr 20, 2026 4:18:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Apr 20, 2026 8:22:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 147
+]]></system-err>
+  </testcase>
+  <testcase name="verifySearchResultsPage" classname="veeva.ipl.automation.tests.VerifySearchResultsTest" time="4.537">
+    <system-out><![CDATA[20:22:28 INFO  BaseTest - Closing browser
+20:22:28 INFO  DriverFactory - Quitting WebDriver
+20:22:28 INFO  DriverFactory - WebDriver closed successfully
+20:22:28 INFO  BaseTest - Test execution completed
+20:22:28 INFO  BaseTest - --------------------------------------------------
+20:22:28 INFO  BaseTest - --------------------------------------------------
+20:22:28 INFO  BaseTest - Starting new test execution
+20:22:28 INFO  BaseTest - Launching browser: edge
+20:22:28 INFO  DriverFactory - Initializing WebDriver for browser: edge
+20:22:28 INFO  DriverFactory - Setting up EdgeDriver
+20:22:40 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS to get latest version of msedgedriver (No such host is known (msedgedriver.azureedge.net))
+20:22:40 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:40 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:40 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:22:40 WARN  WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+20:22:40 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:40 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:40 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:22:40 ERROR WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:298) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:128) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1436) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1262) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1431) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1409) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:421) ~[webdrivermanager-5.9.3.jar:?]
+	at veeva.ipl.automation.drivermanager.DriverFactory.initDriver(DriverFactory.java:46) ~[classes/:?]
+	at veeva.ipl.automation.tests.BaseTest.openBrowser(BaseTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:998) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1806) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676) ~[?:?]
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.2.1.jar:5.2.1]
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:257) ~[webdrivermanager-5.9.3.jar:?]
+	... 44 more
+20:22:40 WARN  DriverFactory - WebDriverManager failed, falling back to local EdgeDriver
+20:22:40 INFO  DriverFactory - Using local EdgeDriver path: C:\Projects\selenium-project/src/main/resources/drivers/msedgedriver.exe
+20:22:41 INFO  DriverFactory - Browser window maximized
+20:22:41 INFO  DriverFactory - Implicit wait set to 10 seconds
+20:22:41 INFO  DriverFactory - Page load timeout set to 30 seconds
+20:22:41 INFO  DriverFactory - WebDriver initialized successfully
+20:22:41 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
+20:22:41 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
+20:22:42 INFO  BaseTest - Application launched successfully
+20:22:42 INFO  Listeners - Test Started: verifySearchResultsPage
+20:22:47 INFO  Listeners - Test Passed: verifySearchResultsPage
+]]></system-out>
+    <system-err><![CDATA[Apr 20, 2026 8:22:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 147
+]]></system-err>
+  </testcase>
+  <testcase name="verifyPointsTable" classname="veeva.ipl.automation.tests.VerifyPointsTable" time="1.194">
+    <system-out><![CDATA[20:22:47 INFO  BaseTest - Closing browser
+20:22:47 INFO  DriverFactory - Quitting WebDriver
+20:22:47 INFO  DriverFactory - WebDriver closed successfully
+20:22:47 INFO  BaseTest - Test execution completed
+20:22:47 INFO  BaseTest - --------------------------------------------------
+20:22:47 INFO  BaseTest - --------------------------------------------------
+20:22:47 INFO  BaseTest - Starting new test execution
+20:22:47 INFO  BaseTest - Launching browser: edge
+20:22:47 INFO  DriverFactory - Initializing WebDriver for browser: edge
+20:22:47 INFO  DriverFactory - Setting up EdgeDriver
+20:22:47 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:47 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:47 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:47 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:22:47 WARN  WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+20:22:47 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:47 WARN  VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+20:22:47 INFO  WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+20:22:47 ERROR WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:298) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:128) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1436) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1262) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1431) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1409) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:421) ~[webdrivermanager-5.9.3.jar:?]
+	at veeva.ipl.automation.drivermanager.DriverFactory.initDriver(DriverFactory.java:46) ~[classes/:?]
+	at veeva.ipl.automation.tests.BaseTest.openBrowser(BaseTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:998) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1806) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676) ~[?:?]
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.2.1.jar:5.2.1]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.2.1.jar:5.2.1]
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157) ~[webdrivermanager-5.9.3.jar:?]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:257) ~[webdrivermanager-5.9.3.jar:?]
+	... 44 more
+20:22:47 WARN  DriverFactory - WebDriverManager failed, falling back to local EdgeDriver
+20:22:47 INFO  DriverFactory - Using local EdgeDriver path: C:\Projects\selenium-project/src/main/resources/drivers/msedgedriver.exe
+20:22:48 INFO  DriverFactory - Browser window maximized
+20:22:48 INFO  DriverFactory - Implicit wait set to 10 seconds
+20:22:48 INFO  DriverFactory - Page load timeout set to 30 seconds
+20:22:48 INFO  DriverFactory - WebDriver initialized successfully
+20:22:48 INFO  ConfigReader - Fetching config value for key: baseUrl -> https://www.iplt20.com/
+20:22:48 INFO  BaseTest - Navigating to URL: https://www.iplt20.com/
+20:22:50 INFO  BaseTest - Application launched successfully
+20:22:50 INFO  Listeners - Test Started: verifyPointsTable
+20:22:51 INFO  VerifyPointsTable - Top Team: PBKS
+20:22:51 INFO  VerifyPointsTable - Actual Points: 11, Expected Points: 11
+20:22:51 INFO  Listeners - Test Passed: verifyPointsTable
+]]></system-out>
+    <system-err><![CDATA[Apr 20, 2026 8:22:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 147
 ]]></system-err>
   </testcase>

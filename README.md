@@ -75,7 +75,7 @@ cross-browser support, and reporting features.
 
 ### 1. Clone the repository ###
 
-git clone 
+git clone https://github.com/yetaboinadeeksha/veevaipluiautomation.git
 
 ---
 
@@ -96,9 +96,9 @@ git clone
 ## How to Run Tests ##
 
 ### Using Maven ###
-
-    mvn test -Pchrome
-    mvn test -Pedge
+    mvn test (Default Google Chrome Browser)
+    mvn test -Pchrome (Google Chrome Browser)
+    mvn test -Pedge (Microsoft Edge Browser)
 
 ---
 
@@ -171,8 +171,5 @@ Logs stored at: /target/logs/framework.log
 
 Ignored unnecessary files:
 
-- /target/
-- /reports/
-- /allure-results/
 - /logs/
 - Clean and structured commits
